@@ -98,7 +98,7 @@ ul{
   color: grey;
   padding: 5px;
 }
-.Assessments{
+#Assessments{
   display: flex;
   flex-direction: column;
   margin: 0 0 20px 0;
@@ -106,14 +106,14 @@ ul{
 .links{
   display: flex;
 }
-.Assessments a{
+#Assessments a{
   text-decoration: none;
   color: grey;
 }
 h3{
   color: white;
 }
-.bibleQuiz a{
+#bibleQuiz a{
   text-decoration: none;
   color: grey;
   margin-top: 20px;
