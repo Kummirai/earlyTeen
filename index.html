@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en"> 
  <head> 
   <title>Early Teen</title> 
@@ -21,6 +21,7 @@ body{
 .container{
   max-width: 1366px;
   margin: 0 auto;
+  
 }
 .navbar{
   display: flex;
@@ -38,12 +39,28 @@ body{
 }
 .mainPage{
   display: flex;
-  /*flex-direction: column;*/
+  min-height: 500px;
   align-items: center;
-  justify-content: center;
-  height: 200px;
-  background-color: beige;
-  color: #0D1821;
+  justify-content: space-between;
+} 
+img{
+   width: 500px;
+   height: auto;
+    
+}
+.mainText{
+    margin-top: 20px;
+    align-items: center;
+}
+.mainText h2{
+    font-weight: 800;
+    font-size: 2rem;
+}
+.mainText h1{
+    align-items: center;
+}
+img{
+flex: 1;
 }
 #hillbrow{
 font-weight: 300;
@@ -53,19 +70,15 @@ font-weight: 300;
   font-weight: 900;
   line-height: 1.2;
 }
-.aimMotto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  color: beige;
-  background-color: #22333B;
+.empower{
+    font-size: 50px;
+    color: #22333B;
+    font-weight: 900;
 }
-
-.aimMotto h2{
-  font-weight: 800;
-  font-size: 2rem;
+.lifeTime{
+    color: grey;
+    font-size: 36px;
+    font-weight: 700;
 }
 .links a{
   display: flex;
@@ -96,9 +109,9 @@ ul{
   margin: 30px 0 0 0;
   background-color: #22333B;
   color: grey;
-  padding: 5px;
+  padding: 10px;
 }
-#Assessments{
+.Assessments{
   display: flex;
   flex-direction: column;
   margin: 0 0 20px 0;
@@ -106,14 +119,14 @@ ul{
 .links{
   display: flex;
 }
-#Assessments a{
+.Assessments a{
   text-decoration: none;
   color: grey;
 }
 h3{
   color: white;
 }
-#bibleQuiz a{
+.bibleQuiz a{
   text-decoration: none;
   color: grey;
   margin-top: 20px;
@@ -121,20 +134,17 @@ h3{
 .aboutUs{
   margin-top: 20px;
 }
-.law ,.pledge{
-  background-color: beige;
-  color: #0D1821;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 10px;
+.lawPledge{
+  display: flex;
   flex: 1;
 }
-.aim, .motto{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+.law,.aim,.pledge,.motto{
+  background-color: beige;
+  color: #0D1821;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
 }
 @media(max-width: 768px){
   .navbar{
@@ -149,46 +159,64 @@ h3{
     flex-direction: column;
     padding: 10px;
     text: align: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
 @media(max-width: 768px){
   .myfooter{
     flex-direction: column;
-    padding: 30px;
     justify-content: center;
       }
-}</style></head> 
+}
+@media(max-width: 768px){
+  .mainPage{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+      }
+ } 
+ @media(max-width: 768px){
+  .container{
+    flex-direction: column;
+    justify-content: center;
+      }
+  } 
+</style>
+</head> 
  <body> 
   <div class="container"> 
    <nav class="navbar"> 
     <div class="heading"> 
      <h1 class>Early Teen</h1> 
+    </div>
+    <div class="links">
+        <a href="#Home">Home</a>
+        <a href="#Assessments">Assessments</a>
+        <a href="#Bible Quiz">Bible Quiz</a>
+        <a href="#Activities"> Events</a>  
     </div> 
-    <div class="links"> <a href="#Home">Home</a> <a href="#Assessments">Assessments</a> <a href="#Bible Quiz">Bible Quiz</a> 
-    </div> 
-   </nav> 
-   <main class="mainPage">
-<div class = "mainText">
-    <h1>Early Teen Class 2023</h1> 
-    <p id="hillbrow">Hillbrow Seventh Day Adventist Church</p>
-</div>
-<div class = "myImgage">
-<img src= "/6768291.jpg" alt = "Teens studying">
-</div>
-   </main> 
-   <div class="aimMotto"> 
-    <section class="aim"> 
+   </nav>
+   
+   <div class="mainPage"> 
+       <div class ="mainText">
+           <h1 class ="empower">Empowering Teens</h1>
+           <h1 class ="lifeTime">For A Lifetime</h1>
+        </div>
+        <div>
+           <img src ="/images/mainImage.jpg" alt ="Teens">
+       </div>
+    </div>
+   
+   <div class="lawPledge"> 
+     <section class="aim"> 
      <h2>Aim</h2> 
      <p>The Advent Message to all the world in my generation.</p> 
     </section> 
     <section class="motto"> 
      <h2>Motto</h2> 
      <p>The love of Christ compels us</p> 
-    </section> 
-   </div> 
-   <div class="lawPledge"> 
+    </section>
     <section class="pledge"> 
      <h2>Pledge</h2> 
      <ul> 
@@ -215,20 +243,20 @@ h3{
     </section> 
    </div> 
    <footer class="myfooter"> 
-    <div id="Assessments"> 
+    <div class="Assessments"> 
      <h3>Assessments</h3>
       <a href="#Assessment1">Assessment 1</a> 
       <a href="https://forms.gle/n6tXCYC7gNke4pbZ9" target="blank">Assessment 2</a> 
       <a href="#Assessment3">Assessment 3</a> 
     </div> 
-    <div id="bibleQuiz"> 
-     <h3>Bible Quiz</h3> <a href="https://www.biblica.com/bible/niv/jonah/1/kjv/">Book Of Jonah</a> 
+    <div class="bibleQuiz"> 
+     <h3>Bible Quiz</h3> <a href="#Book Of Jonah">Book Of Jonah</a> 
     </div> 
     <div class="aboutUs"> 
      <h3>About Us</h3> 
-     <p> We are the Early Teen Class of 2023</p> 
+     <p> We are the Early Teen Class of 2023 of the Hillbrow Seventh Day Adventist Church</p> 
     </div> 
    </footer> 
   </div> 
- </body>
+</body>
 </html>
