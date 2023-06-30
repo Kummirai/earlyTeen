@@ -210,13 +210,13 @@ h3{
     </section> 
    </div> 
    <footer class="myfooter"> 
-    <div class="Assessments"> 
+    <div id="Assessments"> 
      <h3>Assessments</h3>
       <a href="#Assessment1">Assessment 1</a> 
       <a href="https://forms.gle/n6tXCYC7gNke4pbZ9" target="blank">Assessment 2</a> 
       <a href="#Assessment3">Assessment 3</a> 
     </div> 
-    <div class="bibleQuiz"> 
+    <div id="bibleQuiz"> 
      <h3>Bible Quiz</h3> <a href="https://www.biblica.com/bible/niv/jonah/1/kjv/">Book Of Jonah</a> 
     </div> 
     <div class="aboutUs"> 
