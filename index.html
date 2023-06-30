@@ -145,6 +145,26 @@ h3{
   margin: 20px;
   text-align: center;
 }
+.custom-audio {
+  /* Styling for the audio player container */
+  width: 300px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.custom-audio audio {
+  /* Styling for the audio player itself */
+  width: 100%;
+}
+
+.custom-audio audio::-webkit-media-controls-panel {
+  /* Styling for the default media controls panel in WebKit browsers */
+  background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 4px;
+  padding: 10px;
+}
 @media(max-width: 768px){
   .navbar{
     flex-direction: column;
