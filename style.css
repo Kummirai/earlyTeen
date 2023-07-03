@@ -1,0 +1,268 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.container{
+  max-width: 1366px;
+  margin: 0 auto;
+  
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  color: grey;
+  height: 80px;
+  margin: 0 10px 0 10px;
+}
+
+.navbar .heading .logo{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.mainPage{
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img{
+  width: 400px;
+   height: auto;
+   margin: 0 10px 0 10px;
+}
+
+.mainText{
+    width: 600px;
+}
+.mainText h2{
+    font-weight: 900;
+    font-size:3rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.mainText p{
+    padding: 0 50px;
+    font-size: 16px;
+    color: #22333B;
+}
+
+#hillbrow{
+font-weight: 300;
+}
+ h1{
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.empower{
+    font-size: 50px;
+    color: #22333B;
+    font-weight: 900;
+}
+.lifeTime{
+    color: grey;
+    font-size: 36px;
+    font-weight: 700;
+}
+.links a{
+  display: flex;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #22333B;
+}
+
+.links a:hover{
+  color: black;
+}
+.lawPledge{
+  display: flex;
+  margin: 20px 20px 0 20px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.myfooter{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 0 0;
+  background-color: #22333B;
+  color: grey;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+#bibleQuiz{
+    flex: 1;
+    text-align: center;
+}
+
+#Quiz_practice{
+    flex: 1;
+}
+
+#aboutUs{
+    flex: 1;
+    text-align: center;
+}
+
+#Assessments{
+    flex: 1;
+    text-align: center;
+}
+.emphasis{
+font-size: 12px
+
+}
+#Assessments{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+.links{
+  display: flex;
+} 
+#Assessments a{
+  text-decoration: none;
+  color: grey;
+}
+
+#Quiz_practice a{
+  display: flex;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: grey;
+}
+
+h3{
+  color: white;
+}
+#bibleQuiz a{
+  text-decoration: none;
+  color: grey;
+  margin-top: 20px;
+}
+
+.lawPledge{
+  display: flex;
+  flex: 1;
+}
+.law,.aim,.pledge,.motto{
+  background-color: #D0F0E8;
+  color: #1C3144;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.custom-audio {
+  /* Styling for the audio player container */
+  width: 400px;
+  height: 20px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.custom-audio audio {
+  /* Styling for the audio player itself */
+  width: 100%;
+}
+
+.custom-audio audio::-webkit-media-controls-panel {
+  /* Styling for the default media controls panel in WebKit browsers */
+  background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 4px;
+  padding: 10px;
+}
+@media(max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    padding: 10px;
+    text: align: center;
+  }
+}
+
+@media(max-width: 768px){
+  .lawPledge{
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+align-items: center;
+  }
+}
+
+button{
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+    color: #22333B;
+    border: none;
+    margin: 5px;
+}
+
+@media(max-width: 768px){
+  .myfooter{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      }
+}
+@media(max-width: 768px){
+  .myfooter{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+      }
+}
+
+@media(max-width: 768px){
+#Assessments, #bibleQuiz, #Quiz_practice, #aboutUs{
+    flex: 1;
+      }
+}
+@media(max-width: 768px){
+  .mainPage{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+      }
+ } 
+ @media(max-width: 768px){
+  .container{
+    flex-direction: column;
+    justify-content: center;
+      }
+  } 
+  
+   @media(max-width: 768px){
+  .myfooter #Quiz_practice a{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-evenly;
+      }
+  } 
+
+#footer{
+    color: #22333B;
+}
